@@ -26,7 +26,7 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #f1f1f1;
+  background-color: #99d6ff;
   color: black;
 }
 
@@ -111,7 +111,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #99d6ff;
+  background-color: white;
   color: black;
 }
 </style>
@@ -119,12 +119,12 @@ body {
 </html>
 
 <div class="topnav">
+  
   <a href="portfolio.html" target="_self">Alapadatok</a>
-  <a class="active" href="3D nyomtatás.html" target="_self">3D nyomtatás</a>
+  <a href="3D nyomtatás.html" target="_self">3D nyomtatás</a>
   <a href="Versenycsapat.html" target="_self">Versenycsapat</a>
-  <a href="Áramlás.html" target="_self">Áramlástan Szakosztály</a>
-   </div>
-
+  <a class="active" href="Áramlás.html" target="_self">Áramlástan Szakosztály</a>
+</div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
@@ -141,21 +141,22 @@ img {
   vertical-align: middle;
 }
 
-
+/* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
 }
 
-
+/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-
+/* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
 
+/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -164,7 +165,7 @@ img {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -172,18 +173,19 @@ img {
   -webkit-user-select: none;
 }
 
-
+/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
+/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #99d6ff;
 }
 
-
+/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -192,7 +194,7 @@ img {
   top: 0;
 }
 
-
+/* Container for image text */
 .caption-container {
   text-align: center;
   background-color: #222;
@@ -206,11 +208,13 @@ img {
   clear: both;
 }
 
+/* Six columns side by side */
 .column {
   float: left;
   width: 16.66%;
 }
 
+/* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
@@ -221,34 +225,26 @@ img {
 }
 </style>
 <body>  
-    <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="Képek/1.png" style="width:100%">
-  </div>
+
   <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="Képek/2.jpg" style="width:100%">
+    <div class="numbertext">1 / 4</div>
+    <img src="Képek/aszo.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="Képek/3.jpg" style="width:100%">
+    <div class="numbertext">2 / 4</div>
+    <img src="Képek/csat.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="Képek/4.png" style="width:100%">
+    <div class="numbertext">3 / 4</div>
+    <img src="Képek/gabi.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="Képek/5.jpg" style="width:100%">
-  </div>
-    <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="Képek/6.jpg" style="width:100%">
-  </div>
- 
+    <div class="numbertext">4 / 4</div>
+    <img src="Képek/cow.jfif" style="width:100%">
+  </div> 
   <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
 
@@ -259,28 +255,19 @@ img {
   <div class="row">
 
     <div class="column">
-      <img class="demo cursor" src="Képek/1.png" style="width:100%" onclick="currentSlide(1)" alt="Kitűző 3D modelljének tervezésének egyik változata (I. Világháborús érdemrend) - 2019. április.">
-    </div>
-      
-    <div class="column">
-      <img class="demo cursor" src="Képek/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Az elkészült 3D nyomtatott kitűző prototípusa.">
+      <img class="demo cursor" src="Képek/aszo.jpg" style="width:100%" onclick="currentSlide(1)" alt="Legújabb szakmai élményem 2. szemesztertől a Gépész Szakkollégium Áramlástan Szakosztályába való jelentkezés.">
     </div>
     <div class="column">
-     <img class="demo cursor" src="Képek/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="A sorozatgyártás alatt, összesen közel 90 darab készült egy cserkész tábor kiegészítőjéül szolgálva.">
+      <img class="demo cursor" src="Képek/csat.jpg" style="width:100%" onclick="currentSlide(2)" alt="Az Áramlástan Szakosztály szorosan együttműködik az Áramlástan Tanszékkel, a kép Kármán Tódor Szélcsatorna Laboratóriumában készült.">
+    </div>
+    <div class="column">
+     <img class="demo cursor" src="Képek/gabi.jpg" style="width:100%" onclick="currentSlide(3)" alt="Wéber Gábor 2020. december 5-én tartott nekünk és minden érdeklődőnek nyílt előadást a szakosztály szervezésében, az F1-es autók áramlásáról a K155-ös teremben.">
       </div>
     <div class="column">
-      <img class="demo cursor" src="Képek/4.png" style="width:100%" onclick="currentSlide(4)" alt="Cserkész nyakkendőgyűrű 3D modellje, vidrát mintázva - 2019. július.">
+      <img class="demo cursor" src="Képek/cow.jfif" style="width:100%" onclick="currentSlide(4)" alt="Végül itt látható egy tehén aerodinamikája.">
     </div>
-    <div class="column">
-      <img class="demo cursor" src="Képek/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nyomtatva az előbbi nyakkendőgyűrű sast ábrázoló párja, készült még farkast ábrázoló ebből a sorozatból.">
     </div>
-    
-    <div class="column">
-     <img class="demo cursor" src="Képek/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="3D nyomtatott nyakkendőgyűrű, mely a cserkészek jelképével a cserkészliliommal van ellátva - 2019. május."> 
-        </div>
-    
-  </div>
-
+</div>
 
 <script>
 var slideIndex = 1;
