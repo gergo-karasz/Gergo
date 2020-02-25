@@ -1,0 +1,1 @@
+# Ez a projekt a Budapesti Műszaki és Gazdaságtudományi Egyetem Mechatronika, Optika és Gépészeti Informatika Tanszékének évközi feladatára készült, mely munkában be kell mutatni egy igényes web felületen keresztül a saját portfólionkat. 
